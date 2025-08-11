@@ -9,7 +9,7 @@ import time
 import threading
 from pyzbar.pyzbar import decode as zbar_decode
 
-# ---
+#---
 # Helper function to convert the image frame to base64 for API call
 def frame_to_base64(frame):
     """
@@ -191,9 +191,10 @@ def hybrid_scanner(api_key):
     return None
 
 if __name__ == "__main__":
-    API_KEY = "AIzaSyCz-ymDLKxfdQDYaPN7De0CkuDphAwstmM"
+    API_KEY = "YOUR_API_KEY"
     
     if API_KEY == "YOUR_API_KEY":
         print("Please replace 'YOUR_API_KEY' with your actual Gemini API key.")
     else:
         hybrid_scanner(API_KEY)
+
